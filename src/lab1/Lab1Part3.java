@@ -6,7 +6,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-public class Lab1Reader3 {
+public class Lab1Part3 {
     private final String SPACE = " ";
 
     public void readFile() {
@@ -21,7 +21,7 @@ public class Lab1Reader3 {
             String line = in.readLine();
             while (line != null) {
                 
-                //System.out.println(line);
+                System.out.println(line);
                 String[] lineParts = line.split("#");
                 
                 String firstName = lineParts [0];

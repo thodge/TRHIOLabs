@@ -6,7 +6,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-public class Lab1Reader1 {
+public class Lab1Part2 {
 
     public void readFile() {
         PrintWriter out = null;
@@ -15,12 +15,19 @@ public class Lab1Reader1 {
                 + "lab1.txt");
 
         BufferedReader in = null;
+
         try {
+            int recCount = 0;
             in = new BufferedReader(new FileReader(data));
             String line = in.readLine();
+            
             while (line != null) {
-                System.out.println(line);
-                line = in.readLine();  // strips out any carriage return chars
+                recCount++;
+                if (recCount == 2) {
+                    System.out.println(line);
+                }
+                line = in.readLine();  
+                
             }
 
         } catch (IOException ioe) {
@@ -31,5 +38,6 @@ public class Lab1Reader1 {
             } catch (Exception e) {
             }
         }
+
     }
 }
