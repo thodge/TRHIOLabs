@@ -16,7 +16,7 @@ public class Lab3Part2 {
         PrintWriter out = null;
 
         File data = new File(File.separatorChar + "temp" + File.separatorChar
-                + "lab1.txt");
+                + "untitled.rtf");
 
         BufferedReader in = null;
 
